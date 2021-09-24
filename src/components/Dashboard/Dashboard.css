@@ -1,0 +1,147 @@
+#dashboard .main-container{
+    background-color: #ecedf3;
+    height: 100vh;
+}
+#dashboard .inner-container{
+    background-color: #ecedf3;
+}
+#dashboard .header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.103);
+}
+#dashboard .header-container .header-welcome-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+#dashboard .header-container .header-welcome-container .welcome-container{
+    margin-bottom: 0;
+}
+#dashboard .header-container .header-welcome-container .logo-container{
+    width: 15%;
+    margin-right: 50px;
+}
+#dashboard .header-container .header-welcome-container .logo-container img{
+    width: 100%;
+}
+#dashboard .header-container .logout-button{
+    background-color: #ecedf3;
+    padding: 12px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+#dashboard .header-container .logout-button:hover{
+    background-color: #ff2d47; 
+    color: #fff;
+}
+.yes-logout{
+    background-color: #ff2d47 !important; 
+    border: 1px solid transparent !important;
+    opacity: 0.9;
+}
+.yes-logout:hover{
+    opacity: 1;
+}
+.no-logout{
+    background-color: transparent !important; 
+    border: 1px solid gray !important;
+    color: #000 !important;
+}
+.no-logout:hover{
+    background-color: #ff2d47 !important;
+    border: 1px solid transparent !important; 
+    color: #fff !important;
+}
+#dashboard .dashboard-body{
+    margin: 50px 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.103);
+    padding: 20px 30px;
+}
+#dashboard .dashboard-body .average-inner-container{
+    font-size: 20px;
+    font-weight: 500;
+    justify-content: flex-start;
+}
+#dashboard .dashboard-body .period-select{
+    margin-inline: 10px;
+    font-size: 16px;
+}
+#dashboard .dashboard-body .average-number{
+    color: #ff2d47;
+    font-size: 20px;
+    font-weight: 700;
+    margin-inline: 10px;
+}
+#dashboard .dashboard-body .customers-title{
+   margin-block: 20px;
+}
+#dashboard .dashboard-body .search-container{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#dashboard .dashboard-body .search-icon-container{
+    width: 20px;
+    position: absolute;
+    left: 10px;
+}
+#dashboard .dashboard-body .search-icon-container img{
+    width: 100%;
+}
+#dashboard .dashboard-body .search-container #generalSearch{
+    padding-left: 50px;
+}
+#dashboard .customers-listing .customers-header-container,
+#dashboard .customers-listing .single-customer{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-radius: 5px;
+}
+#dashboard .customers-listing  .single-container{
+    width: 20%;
+    padding: 10px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+
+}
+#dashboard .customers-listing .header-title-container{
+    background-color: #ff2d47;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+}
+#dashboard .filter-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#dashboard .filter-container .pagination-container span{
+    padding-right: 15px;
+    font-size: 1rem;
+}
+#dashboard .filter-container .pagination-container .perPage-select{
+    width: 70px;
+    font-size: 1rem;
+}
+#dashboard .loading-customers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff2d47;
+    font-weight: 800;
+    font-size: 100px;
+    text-align: center;
+    padding: 50px;
+}
