@@ -76,7 +76,7 @@ const Customers = () => {
             {((!customers.data || customers.data.length == 0) && searchValue != '') && <div className="loading-customers"><h1>No Customers Found</h1></div>}
             {!customers.data && <div className="loading-customers"><h1>Loading ...</h1></div>}
             {customers.data && customers.data.map((customer, index) => 
-                <CustomerItem id={customer.id} firstname={customer.firstname} lastname={customer.lastname} email={customer.email} phone={customer.phone} location={customer.location} order={index}/>
+                <CustomerItem key={customer.id} id={customer.id} firstname={customer.firstname} lastname={customer.lastname} email={customer.email} phone={customer.phone} location={customer.location} order={index}/>
             )}
         </div>
       </div>

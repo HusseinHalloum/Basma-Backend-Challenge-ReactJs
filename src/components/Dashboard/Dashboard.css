@@ -60,10 +60,10 @@
     color: #fff !important;
 }
 #dashboard .dashboard-body{
-    margin: 50px 20px;
+    margin: 50px 20px 0;
     background-color: #fff;
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.103);
-    padding: 20px 30px;
+    padding: 70px 30px;
 }
 #dashboard .dashboard-body .average-inner-container{
     font-size: 20px;

@@ -10,14 +10,20 @@ const Average = () => {
   const config = {
     headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
   };
+  // console.log(config);
   // GET Average DATA
-  useEffect(async () => {
-    await Axios.get(
-      `http://localhost:8000/api/admin/customers/average?date=${period}`,
-      config
-    ).then((response) => {
-      setAverage(response.data.average);
-    });
+  useEffect( () => {
+    const getCustomers = async () => {
+      try{
+        const response = await Axios.get(`http://localhost:8000/api/admin/customers/average?date=${period}`,config);
+        if(response.status == 200){
+          setAverage(response.data.average);
+        };
+      } catch (error){
+        console.log(error);
+      }
+    }
+    getCustomers();
   }, [period]);
   return (
     <div className="average-container">

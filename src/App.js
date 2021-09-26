@@ -18,7 +18,7 @@ const App = () => {
   const [isAuth, setIsAuth] = useState(localStorage.getItem("token"));
 
   // const updateIsAuth = (token) => { setIsAuth(token);};
-
+  console.log(isAuth);
   return (
     <Router>
       <Switch className="body-container">
@@ -28,7 +28,7 @@ const App = () => {
           component={Dashboard}
           isAuth={isAuth}
         />
-        {(!isAuth || isAuth == '') && <Redirect to="/admin/login" />}
+        {(!isAuth || isAuth == '') ? <Redirect to="/admin/login" /> : <Redirect to="/admin/dashboard" /> }
       </Switch>
     </Router>
   );
